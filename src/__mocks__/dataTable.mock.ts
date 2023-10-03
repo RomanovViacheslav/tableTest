@@ -1,6 +1,14 @@
 import { v4 as uuidv4 } from 'uuid';
 import { ProductEntity } from '../domains/Product.entity';
 
+function formatDate(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day} `;
+}
+
 export const dataMock: ProductEntity[] = [
   {
     id: uuidv4(),
@@ -10,9 +18,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел IT',
     inventoryNumber: '1',
     tags: ['Mac'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -22,9 +30,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел продаж',
     inventoryNumber: '2',
     tags: ['Windows', 'Linux', 'Mac'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -34,9 +42,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Бухгалтерия',
     inventoryNumber: '3',
     tags: ['Mac'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -46,9 +54,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Снабжение',
     inventoryNumber: '4',
     tags: ['Windows', 'Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -58,9 +66,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Директор',
     inventoryNumber: '5',
     tags: ['Mac', 'Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -70,9 +78,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел IT',
     inventoryNumber: '6',
     tags: ['Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -82,9 +90,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Бухгалтерия',
     inventoryNumber: '7',
     tags: ['Mac', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -94,9 +102,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Снабжение',
     inventoryNumber: '8',
     tags: ['Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -106,9 +114,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Директор',
     inventoryNumber: '9',
     tags: ['Mac', 'Linux', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -118,9 +126,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел IT',
     inventoryNumber: '10',
     tags: ['Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -130,9 +138,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Бухгалтерия',
     inventoryNumber: '11',
     tags: ['Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -142,9 +150,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Снабжение',
     inventoryNumber: '12',
     tags: ['Mac', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -154,9 +162,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Директор',
     inventoryNumber: '13',
     tags: ['Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -166,9 +174,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел IT',
     inventoryNumber: '14',
     tags: ['Mac', 'Linux', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -178,9 +186,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Бухгалтерия',
     inventoryNumber: '15',
     tags: ['Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -190,9 +198,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Снабжение',
     inventoryNumber: '16',
     tags: ['Mac', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -202,9 +210,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Директор',
     inventoryNumber: '17',
     tags: ['Linux'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -214,9 +222,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Отдел IT',
     inventoryNumber: '18',
     tags: ['Mac', 'Linux', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -226,9 +234,9 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Бухгалтерия',
     inventoryNumber: '19',
     tags: ['Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
   {
     id: uuidv4(),
@@ -238,8 +246,8 @@ export const dataMock: ProductEntity[] = [
     organizationUnit: 'Снабжение',
     inventoryNumber: '20',
     tags: ['Mac', 'Windows'],
-    createdAt: new Date().getDate().toString(),
-    updatedAt: new Date().getDate().toString(),
-    auditDate: new Date().getDate().toString(),
+    createdAt: formatDate(new Date()),
+    updatedAt: formatDate(new Date()),
+    auditDate: formatDate(new Date()),
   },
 ];
